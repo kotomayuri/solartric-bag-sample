@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solartric Intro</title>
+<style>
+  body, html { margin:0; padding:0; height:100%; overflow:hidden; font-family: 'Arial', sans-serif; background:#000; }
+  .intro { display:flex; flex-direction:column; justify-content:center; align-items:center; height:100%; color:white; text-align:center; position:relative; }
+
+  /* Background animated gradient */
+  .bg { position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(135deg, #ff9800, #ff5722); animation: bgShift 15s infinite alternate; z-index:-1; }
+  @keyframes bgShift {
+    0% { background: linear-gradient(135deg, #ff9800, #ff5722); }
+    25% { background: linear-gradient(135deg, #ff5722, #2196f3); }
+    50% { background: linear-gradient(135deg, #2196f3, #4caf50); }
+    75% { background: linear-gradient(135deg, #4caf50, #ff9800); }
+    100% { background: linear-gradient(135deg, #ff9800, #ff5722); }
+  }
+
+  /* Floating particle animation */
+  .particle { position:absolute; width:8px; height:8px; background:white; border-radius:50%; opacity:0.7; animation: floatParticles 10s linear infinite; }
+  @keyframes floatParticles {
+    0% { transform: translateY(100vh) translateX(0); opacity:0; }
+    50% { opacity:0.7; }
+    100% { transform: translateY(-50vh) translateX(50vw); opacity:0; }
+  }
+
+  h1 { font-size:4em; margin:0; animation: textFade 2s ease-in-out infinite alternate; }
+  p { font-size:1.5em; margin:10px 0; animation: textFade 3s ease-in-out infinite alternate; }
+  @keyframes textFade {
+    0% { opacity:0.3; transform: translateY(-10px); }
+    100% { opacity:1; transform: translateY(0); }
+  }
+
+  button { padding: 15px 35px; font-size:1.2em; border:none; border-radius:8px; background:#fff; color:#ff5722; cursor:pointer; margin-top:30px; transition: transform 0.3s, background 0.3s, color 0.3s; }
+  button:hover { transform: scale(1.1); background:#ff5722; color:white; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <div class="bg"></div>
+  <h1>Solartric</h1>
+  <p>Power Your Every Journey</p>
+  <button onclick="location.href='https://kotomayuri.github.io/solartric-bag-sample/'">Enter Site</button>
+</div>
+
+<!-- Floating particles -->
+<script>
+  for(let i=0;i<50;i++){
+    let p = document.createElement('div');
+    p.className='particle';
+    p.style.left = Math.random()*100 + 'vw';
+    p.style.top = Math.random()*100 + 'vh';
+    p.style.width = p.style.height = (Math.random()*4+4) + 'px';
+    p.style.animationDuration = (Math.random()*5+5) + 's';
+    document.body.appendChild(p);
+  }
+</script>
+
+</body>
+</html>
 
