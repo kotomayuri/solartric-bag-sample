@@ -18,6 +18,19 @@
     100% { background: linear-gradient(135deg, #ff9800, #ff5722); }
   }
 
+  .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  color: #fff; /* text color over dark image */
+  background: url('wallpaper.jpg') no-repeat center center;
+  background-size: cover;
+}
+
   /* Floating particle animation */
   .particle { position:absolute; width:8px; height:8px; background:white; border-radius:50%; opacity:0.7; animation: floatParticles 10s linear infinite; }
   @keyframes floatParticles {
