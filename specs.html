@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solartric Bag Specs</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; }
+  header { background:#fff; padding:15px 25px; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 10px rgba(0,0,0,0.1); position:sticky; top:0; }
+  #logo { width:120px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:8px; background:#ddd; }
+  nav a { margin:0 10px; text-decoration:none; font-weight:bold; color:#222; }
+  .section { padding:60px 20px; text-align:center; }
+  .products { display:flex; flex-wrap:wrap; justify-content:center; gap:25px; }
+  .product-card { background:#fff; border-radius:12px; padding:20px; width:300px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+  .product-card img { width:100%; height:200px; object-fit:cover; border-radius:10px; background:#eee; }
+  .price { font-size:1.8em; color:#007bff; margin:10px 0; }
+  button { padding: 12px 25px; border:none; background:#ff9800; color:white; border-radius:6px; cursor:pointer; font-size:1em; margin-top:10px; }
+  button:hover { background:#e68900; }
+</style>
+</head>
+<body>
+
+<header>
+  <div id="logo">LOGO</div>
+  <nav>
+    <a href="main.html">Home</a>
+    <a href="#specs">Specs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="section" id="specs">
+  <h2>Solartric Bag Specifications</h2>
+  <p>Detailed specs, price, and features of each model</p>
+
+  <div class="products">
+    <!-- Bag 1 -->
+    <div class="product-card">
+      <img src="bag1.jpg" alt="Solartric Basic">
+      <h3>Solartric Basic</h3>
+      <p class="price">฿1,200</p>
+      <p>Weight: 1.2kg</p>
+      <p>Capacity: 20L</p>
+      <p>Customization Fee: ฿1,200</p>
+      <p>Fixing Fee: ฿—</p>
+    </div>
+
+    <!-- Bag 2 -->
+    <div class="product-card">
+      <img src="bag2.jpg" alt="Solartric Travel Pro">
+      <h3>Solartric Travel Pro</h3>
+      <p class="price">฿1,600</p>
+      <p>Weight: 1.5kg</p>
+      <p>Capacity: 25L</p>
+      <p>Customization Fee: ฿1,200</p>
+      <p>Fixing Fee: ฿—</p>
+    </div>
+
+    <!-- Bag 3 -->
+    <div class="product-card">
+      <img src="bag3.jpg" alt="Solartric Explorer Max">
+      <h3>Solartric Explorer Max</h3>
+      <p class="price">฿2,500</p>
+      <p>Weight: 1.8kg</p>
+      <p>Capacity: 30L</p>
+      <p>Customization Fee: ฿1,200</p>
+      <p>Fixing Fee: ฿—</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>For orders, customization, or questions — reach out below.</p>
+  <form style="max-width:400px;margin:auto;">
+    <input type="text" placeholder="Your Name" style="width:100%;padding:10px;margin:5px 0;">
+    <input type="email" placeholder="Your Email" style="width:100%;padding:10px;margin:5px 0;">
+    <textarea placeholder="Message" rows="4" style="width:100%;padding:10px;margin:5px 0;"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+</body>
+</html>
